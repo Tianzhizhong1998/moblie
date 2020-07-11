@@ -1,12 +1,18 @@
-export default{
-     state:{
-
+export default {
+     state: {
+          n: 0
      },
-     actions:{
-
+     //增删改查
+     mutations: {
+          handleMutationsadd(state, params) {
+              state.state
+          },
      },
-     mutations:{
-
+  //处理异步
+     actions: {
+          handleHomeadd({ commit }, params) {
+            commit("handleMutationsadd")
+          }
      },
-     namespaced:true
+     namespaced: true
 }
