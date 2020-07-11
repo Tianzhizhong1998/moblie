@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="add">{{this.$store.state.Home.n}}</div>
-    <button @click="handleAdd">增加</button>
+    <button @click="handleAdd">增加13232</button>
   </div>
 </template>
 
@@ -17,9 +17,12 @@ export default {
          this.apiAddress()
       },
       async apiAddress(){
+        let params ={
+          
+        }
          const res = await this.$store.dispatch("Home/handleHomeadd",{})
          if(res.apstaus){
-           
+
          }
          console.log(res)
       }
